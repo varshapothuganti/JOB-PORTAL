@@ -1,0 +1,79 @@
+<html>
+<head>
+   <title>Login and Registration Form-Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="hero">
+		<div class="form-box">
+			<div class="button-box">
+				<div id="btn"></div>
+             				<button type="button" class="toggle-btn" onclick="login()">Log In</button>
+              				<button type="button" class="toggle-btn" onclick="register()">Register</button>
+			</div>
+			<div class="social-icons">
+				<img src=https://hrcdn.net/community-frontend/assets/facebook-colored-af4249157d.svg>
+				<img src=https://hrcdn.net/community-frontend/assets/google-colored-20b8216731.svg>
+				<img src=https://hrcdn.net/community-frontend/assets/linkedin-colored-1db195795c.svg>
+			</div>
+          			<form onsubmit="display()" id="login" class="input-group">
+				<input type="email" class="input-field" placeholder="User Email" id="text1" required>
+          				<input type="password" class="input-field" placeholder="Enter Password" id="text2" required>
+          				<input type="checkbox" class="check-box"><span> Remember Password</span>
+				<input type="submit" class="submit-btn" value="login" color: #ffffff  >
+			
+			</form>
+			<form id="register" class="input-group1">
+				<input type="text" class="input-field1" placeholder="First Name" required>
+				<input type="text" class="input-field1" placeholder="Last Name" required>
+          				<input type="email" class="input-field1" placeholder="Email Id" required>
+				<input type="text" class="input-field1" placeholder="Password" required>
+				<input type="text" class="input-field1" placeholder="Conform Password" required>
+				<input type="text" class="input-field1" placeholder="Contact No" required>
+				<input type="text" class="input-field1" placeholder="PositionApplying For" required>
+				<input type="text" class="input-field1" placeholder="Experience" required>
+				<input type="text" class="input-field1" placeholder="PreviousCompanyName" required>
+				<input type="text" class="input-field1" placeholder="Reason For Leaving" required>
+				<div class="txt" >Upload Resume</div>
+				<input type="file"  val="upload resume" name="filename">
+          				<input type="checkbox" class="check-box"><span>I agree to the terms and condiions</span>
+          				<button type="submit" class="submit-btn" color: #ffffff>Register</button>
+			</form>
+		</div>
+	</div>
+	<script type="text/javascript">
+	var x= document.getElementById("login");
+	var y= document.getElementById("register");
+	var z= document.getElementById("btn");
+	function register(){
+		x.style.left="-400px";
+		y.style.left="50px";
+		z.style.left="110px";
+	}
+	function login(){
+		x.style.left="50px";
+		y.style.left="450px";
+		z.style.left="0";
+	}
+	
+	function display()
+	{ 
+	var x=document.getElementById('text1').value;
+	var y=document.getElementById('text2').value;
+	var z='leenajones@gmail.com';
+	var w='leena123';
+	if (x==z){
+	 	if (y==w){
+                   		window.open('userhome.html');
+                  	}
+	else{
+		alert('Enter correct password');
+	}
+	}
+	else{
+		alert('Enter Correct Username');
+	}
+	}
+</script>
+</body>
+</html>
