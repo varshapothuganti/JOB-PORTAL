@@ -1,2 +1,2 @@
 # JOB-PORTAL
-Online JOB PORTAL to search jobs front-end
+Online JOB PORTAL to search jobs UI Application.
